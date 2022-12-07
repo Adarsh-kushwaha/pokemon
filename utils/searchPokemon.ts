@@ -1,4 +1,4 @@
-import { ALL_POKEMON_SPECIES } from "../constant/PokemonSpecies";
+import { ALL_POKEMON_SPECIES } from "../constant/pokemonSpecies";
 
 const searchPokemons = (query: string): Promise<string[]> => {
   return new Promise((resolve) => {

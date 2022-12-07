@@ -2,7 +2,9 @@ const PokemonsSearchResult = ({ pokemons }: { pokemons: string[] }) => {
   return pokemons.length > 0 ? (
     <div className="search-grid">
       {pokemons.map((pokemon) => (
-        <div className="pokemon-card">{pokemon}</div>
+        <div className="pokemon-card" key={Math.random()}>
+          {pokemon}
+        </div>
       ))}
     </div>
   ) : (
